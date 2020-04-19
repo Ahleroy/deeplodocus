@@ -670,7 +670,7 @@ class Brain(FrontalLobe):
                 except KeyboardInterrupt:
                     self.sleep()
                 except AttributeError as e:
-                    Notification(DEEP_NOTIF_ERROR, "Deeplodocus's " + str(e))
+                    Notification(DEEP_NOTIF_ERROR, str(e))
 
     def __preprocess_command(self, command):
         """
